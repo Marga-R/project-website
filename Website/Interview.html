@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interview</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a id="home-button" href="index.html"><img src="img/home.png" /></a>
+      </div>
+      <div>
+        <a class="nav" href="StudieAdvies.html">Studie advies</a>
+        <a class="nav" href="Oudersavond.html">Oudersavond</a>
+        <a class="nav" href="Examenplan.html">Examenplan</a>
+        <a class="nav" href="Begeleiding.html">Begeleiding</a>
+        <a class="nav" href="Software.html">Software</a>
+        <a class="nav, active" href="Interview.html">Interview</a>
+        <a
+          class="nav, opleidingswijzer-nav "
+          href="Opleidingwijzer.html"
+          >Opleidingwijzer</a
+        >
+        <a class="nav" href="Locatiegids.html">Locatiegids</a>
+        <a class="nav" href="EduArte.html">EduArte</a>
+        <a class="nav" href="Canvas.html">Canvas</a>
+        <div class="submenu">
+          <a href="Opleidingwijzer.html#keuzedeel">Keuzedeel</a>
+          <a href="Opleidingwijzer.html#beroepspraktijkvorming">Beroepspraktijkvorming</a>
+          <a href="Opleidingwijzer.html#begeleidingsteam">Begeleidingsteam</a>
+          <a href="Opleidingwijzer.html#studieloopbaanbegeleider">Studieloopbaanbegeleider</a>
+          <a href="Opleidingwijzer.html#aanwezigheidsregistratie">Aanwezigheidsregistratie</a>
+          <a href="Opleidingwijzer.html#examinering">Examinering en diplomering</a>
+          <a href="Opleidingwijzer.html#studievoortgang">Studievoortgang</a>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <main id="interview-main">
+      <h1></h1>
+      <article>
+        <h2>Arnas</h2>
+        <p>
+          Mijn klasgenoot is Arnas, hij komt uit Litouwen en is 23 jaar oud.
+          Zijn hobby’s zijn de sportschool. Hij heeft deze opleiding gekozen
+          want hij heeft veel interess in ICT en wil zijn zelf programma’s
+          maken. Hij vindt programmeren het leukste vak van deze opleiding. Hij
+          heeft 2 broers en zijn droombaan is programmeur. Hij heeft niemand in
+          zijn gezin dat werkt in ICT. Hij heeft een kat die heet Snickers.
+        </p>
+      </article>
+      <article>
+        <h2>Margarida</h2>
+        <p>
+          Mijn klasgenoot is Margarida, ze komt uit Portugal en is 19 jaar oud.
+          Haar droombaan is Software Developer te worden. Ze houd heel veel van
+          programmeren daarom ze zit nu op deze opleiding en haar hobby’s zijn
+          Gamen en Lezen. Ze vindt programmeren het leukste vak van deze
+          opleiding. Ze heeft 2 grote honden zijn namen zijn Charlie en Mari. Ze
+          heeft niemand van haar familie op het ICT wereld, maar haar vader
+          werkt wel met zijn laptop omdat hij een ingenieur is. Ze heeft geen
+          zusjes of broers.
+        </p>
+        <br>
+        <img src="img/Margapfp.jpg" alt="Marga" class="Margaimg">
+      </article>
+    </main>
+      <br>
+      <section class="formint">
+      <h1 class="formh">Vertel het ons over jou!</h1>
+      <br>
+      <br>
+      <form action="">
+        <label for="fname" class="bigp">Eerst Naam:</label><br>
+        <input type="text" id="fname" name="fname" pattern="[Z-Aa-z]+" required><br>
+        <label for="lname" class="bigp">Laatst Naam:</label><br>
+        <input type="text" id="lname" name="lname" pattern="[Z-Aa-z]+" required><br><br>
+        <p class="bighelp">Heb u huisdieren?</p><br>
+        <label class="container">Ja
+            <input type="radio" checked="checked" name="gender">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Nee
+            <input type="radio" name="gender">
+            <span class="checkmark"></span>
+          </label>    
+    <br><br>
+        <p class="bighelp">Wat hou je van?</p><br>
+        <label for="Shouse" class="bigp">Wat is uw favoriete kleur?</label><br>
+        <input type="text" id="Shouse" name="Shouse" required><br>
+        <label for="Pcity" class="bigp">Wat doe u voor werk?</label><br>
+        <input type="text" id="Pcity" name="Pcity" required><br>
+        <label for="Cty" class="bigp">Wat zijn uw Hobbies?</label><br>
+        <input type="text" id="Cty" name="Cty" required><br>
+        <label for="BSN" class="bigp">Wat is uw favoriete nummer?</label><br>
+        <input type="number" id="BSN" name="BSN" min="1" max="9" required>
+    <br>
+    <label for="land" class="bigp">Waar kom u vandaan?</label><br>
+    <select name="land" id="land">
+      <option value="Select">---------------Select Country---------------</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Japan">Japan</option>
+      <option value="Spain">Spain</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Italy">Italy</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Other">Other...</option>
+    </select>
+    <br>
+        <label for="datemin" class="bigp">Geboren date:</label><br>
+        <input type="date" id="datemin" name="datemin" required><br>
+        <label for="Pnumber" class="bigp">Hoe oud ben u?</label><br>
+        <input type="number" id="Pnumber" name="Pnumber" required><br>
+        <label for="email" class="bigp">Contact Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="pwd" class="bigp">Secret woord</label><br>
+        <input type="password" id="pwd" name="pwd" required><br>
+        <input type="submit" value="Stuur nu">
+</form>
+      </section>
+    <footer>
+      <h2>Website gemaakt door: Arnas & Margarida</h2>
+    </footer>
+  </body>
+</html>

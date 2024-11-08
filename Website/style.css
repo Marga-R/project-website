@@ -1,0 +1,681 @@
+:root {
+  --navy: #2f4156;
+  --teal: #567c8d;
+  --sky-blue: #c8d9e6;
+}
+html {
+  margin-right: calc(-1 * (100vw - 100%));
+  overflow-x: hidden;
+  font-size: 110%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+*:visited {
+  color: var(--navy);
+}
+body {
+  background-color: white;
+  height: inherit;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--navy);
+  line-height: 120%;
+}
+
+p,
+li,
+pre {
+  color: #567c8d;
+  line-height: 160%;
+}
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--navy);
+}
+/*                        Navigation-- */
+nav {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  border-bottom: 1px solid var(--navy);
+  top: 0;
+  background-color: white;
+  margin: 0;
+}
+nav div a,
+#submenu a {
+  color: var(--navy);
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 110%;
+}
+nav div a img {
+  color: transparent;
+  width: 2rem;
+}
+.active,
+nav div a:hover:not(#home-button) {
+  text-decoration-line: underline;
+  color: black;
+}
+.submenu {
+  position: absolute;
+  top: 3rem;
+  font-size: 90%;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  padding: 0 2vh;
+  display: none;
+  flex-wrap: wrap;
+  border: 1px solid var(--navy);
+}
+.opleidingswijzer-nav:hover ~ .submenu, .submenu:hover {
+  display: flex;
+}
+/*                        --Navigation */
+#TCR {
+  display: flex;
+  border: 5px rgb(41, 53, 92) solid;
+  margin-left: 10%;
+  image-rendering: optimizeQuality;
+}
+
+.locatiesh1 {
+  text-transform: uppercase;
+  margin: 2vw;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.location2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textlocaties1 {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#locatiegids h2 {
+  margin-left: 30px;
+}
+
+#locatiegids h3 {
+  margin-left: 45px;
+  color: var(--navy);
+}
+
+#locatiegids section {
+  padding-right: 200px;
+  padding-left: 40px;
+}
+
+.titel1 {
+  font-size: 35px;
+}
+
+.informatietext1 {
+  font-size: 17px;
+}
+
+.painf {
+  font-size: 15px;
+}
+
+#locatiegids {
+  display: flex;
+  flex-flow: column;
+}
+#locatiegids section {
+  margin: 2rem;
+}
+#locatiegids header {
+  background-color: var(--navy);
+  padding-bottom: 5vh;
+}
+#locatiegids header h1 {
+  color: white;
+}
+#locatiegids header p {
+  color: var(--sky-blue);
+}
+/*                  --Homepage-- */
+#homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#homepage main {
+  flex-grow: 1;
+}
+#homepage main header {
+  text-align: center;
+  width: 100%;
+  background-image: url(img/School2.png);
+  background-blend-mode: overlay;
+  background-color: var(--navy);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  margin-bottom: 3vh;
+}
+#homepage main header h1 {
+  color: white;
+  padding-top: 15vh;
+}
+#homepage main section {
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+#homepage main section article {
+  background-color: white;
+  height: 25vh;
+  width: 25vw;
+  margin: 2vh;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+footer {
+  margin-top: 5vh;
+  min-width: 100vw;
+  height: 5vh;
+  background-color: var(--navy);
+  color: white;
+  font-weight: bold;
+  padding: 2vh 2vh 1vh 2vh;
+  border-top: 1px solid var(--navy);
+}
+footer h2 {
+  margin: 0;
+  color: white;
+}
+/* --Homepage 
+  Interview-- */
+#interview-main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+#interview-main article {
+  height: 70vh;
+  width: 40%;
+}
+#interview-main article h2 {
+  text-align: center;
+}
+
+.Margaimg {
+  width: 300px;
+}
+
+.formint {
+  text-align: center;
+}
+
+form {
+  font-size: larger;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.formh {
+  background-color: #2f4156;
+  color: white;
+  padding: 2%;
+}
+
+
+input[type=text] {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+.container{
+  display: block;
+position: relative;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 20px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 635px;
+  height: 25px;
+  width: 25px;
+  background-color: #d1d1d1;
+  border-radius: 50%;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: var(--teal);
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: var(--navy);
+}
+
+input[type=number] {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=date] {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+select {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color:  var(--teal);
+  color: white;
+  border: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  font-size: larger;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  border: 2px solid var(--navy);
+  border-radius: 4px;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.bigp {
+  font-size: 20px;
+}
+
+.bighelp {
+  font-size: 25px;
+}
+
+/* --Interview */
+/* Canvas-- */
+#canvas {
+  font-size: 115%;
+}
+#canvas iframe {
+  height: 80vh;
+  width: 80vw;
+}
+#canvas input[type="checkbox"] {
+  width: 0;
+  height: 0;
+}
+#canvas input:checked + .control {
+  display: block;
+}
+.control {
+  display: none;
+}
+#canvas label {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+#canvas section,
+#canvas header {
+  padding: 3vh;
+}
+#canvas header {
+  background-color: var(--navy);
+  color: white;
+  display: flex;
+}
+#canvas header h1 {
+  color: var(--sky-blue);
+}
+#canvas p {
+  color: white;
+}
+#canvas img {
+  float: right;
+  padding-left: 3vh;
+}
+
+/* --Canvas */
+/* Opleidingwijzer-- */
+#opleiding img {
+  width: 500px;
+  float: right;
+}
+#opleiding span {
+  color: var(--sky-blue);
+}
+#opleiding header {
+  background-color: var(--navy);
+  padding: 3vh 5vh;
+  font-size: 110%;
+}
+#opleiding header h1 {
+  color: var(--sky-blue);
+  text-align: center;
+  padding-bottom: 3vh;
+  width: 100%;
+}
+#opleiding header p {
+  color: white;
+}
+#opleiding section {
+  padding: 3vh 5vh;
+  margin-right: 40vh;
+}
+/* --Opleidingwijzer */
+
+/* EduArte */
+
+.eduimg {
+  margin-left: 25vw;
+  margin-top: 5%;
+}
+
+.headerh1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  color: rgb(11, 11, 154);
+}
+
+.p-edu {
+  margin-left: 5%;
+}
+
+.rooster {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.cijfers1 {
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.cijfers2 {
+  width: 20%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+/* EduArte */
+
+/*Software */
+
+.software {
+  width: 100%;
+  height: 55vh;
+  background-color: #2f4156;
+  background-image: url(img/softwarebackimg.png);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Softwareh {
+  text-align: center;
+}
+
+.articlesoft {
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+
+.officeimg {
+  width: 14%;
+}
+
+.Teamsimg {
+  width: 10%;
+}
+
+.VSCimg {
+  width: 6%;
+  margin-right: 1%;
+}
+
+.figmaimg {
+  width: 7%;
+  margin-right: 1%;
+}
+
+.githubimg {
+  width: 7%;
+  margin-left: 0;
+}
+
+.githubdimg {
+  width: 8%;
+  margin-right: 1%;
+}
+
+/*Software */
+/* Begeleiding-- */
+@scope (#begeleiding-main) {
+  :scope {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    color: white;
+  }
+  header {
+    background-color: var(--navy);
+    padding: 5vh;
+  }
+  header p {
+    color: white;
+    font-size: 110%;
+  }
+  section {
+    padding: 2vh 5vh;
+    margin-right: 20vw;
+  }
+  header img {
+    height: 35vh;
+    float: right;
+  }
+  p {
+    padding: 0.5rem 0;
+  }
+  @scope (#begeleidingteam) {
+    :scope {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div {
+      margin: 5vh 5vh 5vh 0;
+      width: 25rem;
+    }
+    img {
+      height: 8vh;
+      float: left;
+      padding: 1vh;
+    }
+  }
+  p {
+    padding: 0;
+  }
+}
+/* --Begeleiding */
+/* Examenplan-- */
+@scope (#examenplan) {
+  :scope {
+    margin: 0 10vh 0 5vh;
+    font-size: 110%;
+  }
+  thead {
+    background-color: var(--navy);
+    color: white;
+  }
+  table {
+    width: 100%;
+    margin: 3vh 0 1vh 0;
+    border-spacing: 0;
+    border: 0.2px solid black;
+  }
+  tr,
+  td {
+    border: 0.2px solid black;
+    padding: 1vh;
+    font-size: 90%;
+  }
+  th {
+    padding: 1vh;
+  }
+  div {
+    margin: 3vh 0;
+  }
+  strong {
+    font-size: 120%;
+  }
+  p,
+  li {
+    color: #375b6b;
+  }
+}
+#examenplan-header {
+  background-color: var(--navy);
+  padding: 5vh;
+  margin-bottom: 3vh;
+}
+#examenplan-header h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 3vh;
+}
+#examenplan-header p,
+#examenplan-header li {
+  color: white;
+}
+/* --Examenplan */
+/* StudieAdvies-- */
+@scope (#studieadvies) {
+  header {
+    background-color: var(--navy);
+    height: 35vh;
+    padding: 3vh;
+    overflow: hidden;
+    font-size: 120%;
+  }
+  header h1 {
+    color: white;
+    text-align: center;
+  }
+  header p {
+    color: white;
+  }
+  img {
+    float: right;
+    width: 35vh;
+  }
+  section {
+    padding: 2vh 5vh;
+    margin-right: 25vw;
+  }
+}
+/* --StudieAdvies */
+
+/* --Oudersavond */
+
+.tableo {
+  width: 80%;
+
+}
+
+.tro {
+  border: 1px black solid;
+}
+
+.tdo {
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.thomain {
+  border: 1px black solid;
+  background-color: #2f4156;
+  color: white;
+  padding: 10px;
+}
+
+.omain {
+  margin-left: 5%;
+}
+
+.ouderinf {
+  margin-right: 5%;
+}
+
+
+
+/* --Oudersavond */
