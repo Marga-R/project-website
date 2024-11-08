@@ -83,7 +83,8 @@ nav div a:hover:not(#home-button) {
   flex-wrap: wrap;
   border: 1px solid var(--navy);
 }
-.opleidingswijzer-nav:hover ~ .submenu, .submenu:hover {
+.opleidingswijzer-nav:hover ~ .submenu,
+.submenu:hover {
   display: flex;
 }
 /*                        --Navigation */
@@ -195,6 +196,9 @@ nav div a:hover:not(#home-button) {
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+#homepage footer {
+  margin-top: 0;
+}
 footer {
   margin-top: 5vh;
   min-width: 100vw;
@@ -224,7 +228,9 @@ footer h2 {
 #interview-main article h2 {
   text-align: center;
 }
-
+#arnasimg {
+  width: 300px;
+}
 .Margaimg {
   width: 300px;
 }
@@ -246,7 +252,7 @@ form {
 }
 
 
-input[type=text] {
+#interview input[type=text] {
   border: 2px solid var(--navy);
   border-radius: 4px;
   width: 30%;
@@ -255,7 +261,7 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-input[type=radio] {
+#interview input[type=radio] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -290,7 +296,7 @@ font-size: 20px;
   background-color: var(--navy);
 }
 
-input[type=number] {
+#interview input[type=number] {
   border: 2px solid var(--navy);
   border-radius: 4px;
   width: 30%;
@@ -299,7 +305,7 @@ input[type=number] {
   box-sizing: border-box;
 }
 
-input[type=date] {
+#interview input[type=date] {
   border: 2px solid var(--navy);
   border-radius: 4px;
   width: 30%;
@@ -317,7 +323,7 @@ select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+#interview input[type=submit] {
   background-color:  var(--teal);
   color: white;
   border: 0;
@@ -330,7 +336,7 @@ input[type=submit] {
   box-sizing: border-box;
 }
 
-input[type=password] {
+#interview input[type=password] {
   border: 2px solid var(--navy);
   border-radius: 4px;
   width: 30%;
@@ -339,7 +345,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-input[type=email] {
+#interview input[type=email] {
   border: 2px solid var(--navy);
   border-radius: 4px;
   width: 30%;
@@ -389,7 +395,7 @@ input[type=email] {
   display: flex;
 }
 #canvas header h1 {
-  color: var(--sky-blue);
+  color: white;
 }
 #canvas p {
   color: white;
@@ -565,6 +571,34 @@ input[type=email] {
   p {
     padding: 0;
   }
+  legend {
+    color: var(--navy);
+    font-size: 130%;
+  }
+  .biglabel {
+    color: var(--navy);
+    font-size: 120%;
+    margin: 2rem 0;
+  }
+  textarea {
+    font-size: 100%;
+  }
+  fieldset {
+    width: 58rem;
+  }
+  input[type=submit], input[type=reset] {
+    background-color: var(--navy);
+    color: white;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--navy);
+    border-radius: 4px;
+  }
+  label, input {
+    color: var(--teal);
+
+  }
 }
 /* --Begeleiding */
 /* Examenplan-- */
@@ -649,7 +683,6 @@ input[type=email] {
 
 .tableo {
   width: 80%;
-
 }
 
 .tro {
@@ -675,7 +708,5 @@ input[type=email] {
 .ouderinf {
   margin-right: 5%;
 }
-
-
 
 /* --Oudersavond */
